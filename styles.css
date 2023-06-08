@@ -3,7 +3,101 @@
   margin: 0;
 }
 
-@media only screen and (min-width: 992px) {
+.type__container {
+  background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #f5f5f5 51.56%, rgba(245, 245, 245, 0) 100%);
+  padding: 20px;
+}
+.type__container > .type__title {
+  font-weight: 400;
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
+  font-size: 24px;
+}
+.type__container > .pianos__container {
+  display: flex;
+  flex-direction: column;
+}
+.type__container .pianos__container > .pianos__box {
+  background-color: white;
+  width: 230px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+  margin: 20px auto;
+  padding: 20px 10px;
+}
+.type__container .pianos__container > .pianos__box > img {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+.type__container .pianos__container > .pianos__box .pianos__info-container {
+  border-top: 1px dotted #dbdbdb;
+  margin-top: 15px;
+}
+.type__container .pianos__container > .pianos__box .pianos__info-container > h5 {
+  margin: 10px 0px;
+  font-size: 16px;
+  font-family: "Abril Fatface", cursive;
+  font-weight: 400;
+}
+.type__container .pianos__container > .pianos__box .pianos__info-container .info__infodata {
+  margin: 20px 0px 15px 0px;
+}
+.type__container .pianos__container > .pianos__box .pianos__info-container .info__infodata > .info__list {
+  flex-direction: row;
+  display: flex;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  justify-content: center;
+}
+.type__container .pianos__container > .pianos__box .pianos__info-container .info__infodata > .info__list > .info__list-item {
+  list-style-position: inside;
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+}
+.type__container .pianos__container > .pianos__box .pianos__info-container .info__infodata > .info__list .info__list-item::marker {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.type__container .pianos__container > .pianos__box .pianos__info-container .info__infodata > .info__list > .info__list-item.info__list-item--notdotted {
+  list-style: none;
+}
+.type__container .pianos__container > .pianos__box .pianos__info-container .pianos__buttons-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.type__container .pianos__container > .pianos__box .pianos__info-container .pianos__buttons-container > .button__price {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid black;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+.type__container .pianos__container > .pianos__box .pianos__info-container .pianos__buttons-container > .button__cart {
+  background-color: black;
+  padding: 10px;
+  vertical-align: middle;
+  margin-left: 20px;
+  border-radius: 8px;
+}
+.type__container .button__container {
+  display: flex;
+  align-items: center;
+}
+.type__container .button__container > .type__button--small {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  width: 100px;
+  border-radius: 8px;
+  border: none;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
   body {
     background-color: blue;
   }

@@ -1,12 +1,110 @@
 @import "vars";
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
-
-@media only screen and (min-width: 992px) {
-    body {
-        background-color: blue;
+.type__container {
+  background: linear-gradient(
+    180deg,
+    rgba(245, 245, 245, 0) 0%,
+    #f5f5f5 51.56%,
+    rgba(245, 245, 245, 0) 100%
+  );
+  padding: 20px;
+  > .type__title {
+    font-weight: 400;
+    text-align: center;
+    font-family: $font-abril-fatface;
+    font-size: 24px;
+  }
+  > .pianos__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .pianos__container > .pianos__box {
+    background-color: $white;
+    width: 230px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+    margin: 20px auto;
+    padding: 20px 10px;
+    > img {
+      display: block;
+      width: 80%;
+      margin: auto;
     }
+    .pianos__info-container {
+      border-top: 1px dotted #dbdbdb;
+      margin-top: 15px;
+      > h5 {
+        margin: 10px 0px;
+        font-size: 16px;
+        font-family: $font-abril-fatface;
+        font-weight: 400;
+      }
+      .info__infodata {
+        margin: 20px 0px 15px 0px;
+        > .info__list {
+          flex-direction: row;
+          display: flex;
+          padding-inline-start: 0px;
+          justify-content: center;
+          > .info__list-item {
+            list-style-position: inside;
+            font-size: 12px;
+            font-family: $font-raleway;
+          }
+          .info__list-item::marker {
+            margin-left: 0px;
+            margin-right: 0px;
+          }
+          > .info__list-item.info__list-item--notdotted {
+            list-style: none;
+          }
+        }
+      }
+
+      .pianos__buttons-container {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        > .button__price {
+          background-color: $white;
+          border-radius: 8px;
+          padding: 10px;
+          border: 1px solid $black;
+          font-family: $font-raleway;
+          font-size: 16px;
+        }
+        > .button__cart {
+          background-color: $black;
+          padding: 10px;
+          vertical-align: middle;
+          margin-left: 20px;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+  .button__container {
+    display: flex;
+    align-items: center;
+    >.type__button--small {
+        background-color: $black;
+        color: $white;
+        padding: 5px;
+        width: 100px;
+        border-radius: 8px;
+        border: none;
+        margin: 0 auto;
+      }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: blue;
+  }
 }
