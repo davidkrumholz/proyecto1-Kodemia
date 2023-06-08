@@ -7,4 +7,23 @@
   body {
     background-color: blue;
   }
+}
+.nav__bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__iconimage {
+  width: 88px;
+  height: 44px;
+  padding-top: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.header__checkoutImage {
+  display: inline-block;
+  width: 100px;
+  height: 110px;
 }/*# sourceMappingURL=styles.css.map */
