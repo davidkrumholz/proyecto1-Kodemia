@@ -1,5 +1,6 @@
 @import "vars";
 
+
 * {
     margin: 0;
 }
@@ -24,6 +25,17 @@
   height: 110px;
 }
 
+.header__buttons {
+  bottom: 60px;
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+}
+
+
+
+
 .container__p {
   text-align: center;
   font-size: 16px;
@@ -39,7 +51,7 @@
 
 .container__image_of_piano {
   display: block;
-  width: 80%;
+  width: 60%;
   margin: auto;
 }
 
@@ -66,6 +78,8 @@
   padding-bottom: 6px;
   background-color: white;
 }
+
+
 
 @media only screen and (min-width: 992px) {
     body {
