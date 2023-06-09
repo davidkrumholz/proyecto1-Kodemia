@@ -10,7 +10,6 @@
 }
 
   .conoce__title {
-    background-color: bisque;
     font-family: "abril fatface", Arial, sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -29,14 +28,14 @@
   }
 
   
-  
-  
   .nuevo__ebony {
     color: white;
     font-family: "abril fatface", Arial, sans-serif;
     font-weight: 400;
     font-size: 24px;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   .container__group2282 {
@@ -44,6 +43,13 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; // Centrar horizontalmente
+    align-items: center; // Centrar verticalmente
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
   
   }
   
@@ -53,6 +59,8 @@
     font-weight: 400;
     font-size: 24px;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   .texto__lorem {
@@ -61,6 +69,9 @@
     font-weight: 400;
     font-size: 16px;
     text-align: center;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   
   .container__group2281 {
@@ -69,17 +80,37 @@
     font-weight: 700;
     font-size: 12px;
     text-align: center;
+    margin-top: 10px;
   }
+
+  .lista__caracteristicas {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .non_bullet {
+    list-style: none;
+  }
+
+
   
   .container__grupo2218 {
+    background-color: black;
     color: white;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 14px;
     text-align: center;
-  
+    padding: 5px;  
+    width: 228px; /* Ajusta el valor según el ancho deseado */
+    border-radius: 8px;
   }
 
+ 
 
 
 
