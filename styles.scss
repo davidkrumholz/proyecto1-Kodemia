@@ -21,6 +21,7 @@
   > .pianos__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .pianos__container > .pianos__box {
     background-color: $white;
@@ -28,7 +29,7 @@
     height: auto;
     border-radius: 8px;
     box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
-    margin: 20px auto;
+    margin: 20px;
     padding: 20px 10px;
     > img {
       display: block;
@@ -36,7 +37,7 @@
       margin: auto;
     }
     .pianos__info-container {
-      border-top: 1px dotted #dbdbdb;
+      border-top: 2px dotted #dbdbdb;
       margin-top: 15px;
       > h5 {
         margin: 10px 0px;
@@ -103,8 +104,25 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   body {
-    background-color: blue;
+  }
+  .type__container {
+    >.pianos__container {
+        flex-direction: row;
+        margin-top: 85px;
+        justify-content: center;
+        >.pianos__box {
+            height: 220px;
+            > img{
+                position: relative;
+                top: -95px;
+            }
+            .pianos__info-container {
+                position: relative;
+                top: -82px;
+            }
+        }
+    }
   }
 }
