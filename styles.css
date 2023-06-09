@@ -3,31 +3,27 @@
   margin: 0;
 }
 
-@media only screen and (min-width: 992px) {
-  body {
-    background-color: blue;
-  }
-}/*# sourceMappingURL=styles.css.map */
-
-
-
 .container__grupo2280 {
-  background-color:lightgreen;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
 }
 
-.conoce__tittle {
+.conoce__title {
   background-color: bisque;
   font-family: "abril fatface", Arial, sans-serif;
   font-weight: 400;
   font-size: 24px;
   text-align: center;
+  background-image: url("./assets/images/Group 2238.png");
+  background-position: cover;
+  background-repeat: no-repeat;
 }
 
 .container__grupo2240 {
   margin: auto;
-  background-color: lightblue;
   width: 288px;
   height: 263.31px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .nuevo__ebony {
@@ -40,10 +36,9 @@
 
 .container__group2282 {
   color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 12px;
-
 }
 
 .desde {
@@ -55,6 +50,7 @@
 }
 
 .texto__lorem {
+  color: white;
   font-family: raleway;
   font-weight: 400;
   font-size: 16px;
@@ -63,7 +59,7 @@
 
 .container__group2281 {
   color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 12px;
   text-align: center;
@@ -71,18 +67,14 @@
 
 .container__grupo2218 {
   color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 14px;
   text-align: center;
-
 }
 
-
-
-
-
-
-
-
-
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: blue;
+  }
+}/*# sourceMappingURL=styles.css.map */
