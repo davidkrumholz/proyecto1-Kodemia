@@ -3,6 +3,7 @@
   margin: 0;
 }
 
+/* Top menu bar */
 .nav__bar {
   display: flex;
   justify-content: space-between;
@@ -34,10 +35,14 @@
   display: none;
 }
 
+/* Landing page  main info */
 .container__p {
   text-align: center;
   font-size: 16px;
   margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: rgb(133, 133, 133);
 }
 
 .container__h1 {
