@@ -21,16 +21,18 @@
 
 .header__checkoutImage {
   display: inline-block;
-  width: 100px;
-  height: 110px;
+  width: 120px;
+  height: 130px;
+  padding: 1px;
 }
 
 .header__buttons {
-  bottom: 60px;
+  bottom: 73px;
   position: relative;
   border-radius: 10px;
   background-color: white;
   border: none;
+  padding: 10px;
 }
 
 
