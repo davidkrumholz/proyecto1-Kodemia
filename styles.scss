@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@500&display=swap");
 @import "vars";
 
-
-
 * {
-    margin: 0;
+  margin: 0;
 }
 
 /* Top menu bar */
@@ -40,9 +38,7 @@
   display: none;
 }
 
-
 /* Landing page  main info */
-
 
 .container__p {
   text-align: center;
@@ -50,7 +46,7 @@
   margin-bottom: 15px;
   font-family: $font-poppins;
   font-weight: 300;
-  color: rgb(133,133,133);
+  color: rgb(133, 133, 133);
 }
 
 .container__h1 {
@@ -58,18 +54,45 @@
   margin-bottom: 30px;
   font-size: 34px;
   font-family: $font-abril-fatface;
-
 }
 
-.container__image_of_piano {
-  display: block;
+/* Landing image pictures */
+
+.container__media {
+  display: flex;
+}
+
+.container__media__image_of_piano {
   width: 60%;
   margin: auto;
+  padding: 0px;
+}
+
+.container__media__icons {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-bottom: 70px;
+  
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 100%;
+  border: solid 1px black;
 }
 
 .container__botones {
   text-align: center;
   margin-bottom: 35px;
+}
+
+.facebook {
+  height: 100px;
+  width: 100px;
 }
 
 .container__botones__black {
@@ -96,15 +119,11 @@
   border: solid 1px black;
 }
 
-
-
 @media only screen and (min-width: 992px) {
-    body {
-        background-color: blue;
-    }
-    .header__buttons {
-      display: inline-block;
-    }
+  body {
+    background-color: blue;
   }
-
- 
+  .header__buttons {
+    display: inline-block;
+  }
+}
