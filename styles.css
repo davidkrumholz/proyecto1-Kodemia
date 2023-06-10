@@ -1,35 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;500&family=Raleway:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
-  background-color: rgba(255, 255, 255, 0.43);
 }
 
-.partners__icon-box {
-  height: 103px;
-  width: 288px;
-  left: 15.55px;
-  top: 3730px;
-  background: #000000;
-  margin: 30px;
-  border-radius: 1000px;
+.partners__container > .partners__main-title {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Abril Fatface", cursive;
+  text-align: center;
 }
-
-img {
-  position: absolute;
+.partners__container > .partners__main-container {
+  margin-top: 20px;
 }
-
-#Petrof {
-  border-top-right-radius: 200px;
-  border-bottom-right-radius: 200px;
+.partners__container > .partners__main-container > .partners__linecontainer {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  align-items: center;
 }
-
-#Piafmar {
-  border-top-right-radius: 200px;
-  border-bottom-right-radius: 200px;
+.partners__container > .partners__main-container > .partners__linecontainer > .partners__single-box {
+  width: 220px;
+  height: 80px;
+  background-color: black;
+  margin: 5px;
+  padding: 10px;
+}
+.partners__container > .partners__main-container > .partners__linecontainer > .partners__single-box > .partners__icon-box {
+  background-color: gray;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partners__container > .partners__main-container > .partners__linecontainer > .partners__single-box.partners__single-box--none {
+  display: none;
 }
 
 @media only screen and (min-width: 992px) {
   body {
     background-color: blue;
+  }
+  .partners__container > .partners__main-container > .partners__linecontainer {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    justify-content: center;
+  }
+  .partners__container > .partners__main-container > .partners__linecontainer > .partners__single-box {
+    width: 328px;
+    background-color: black;
+    margin: 5px;
+  }
+  .partners__container > .partners__main-container > .partners__linecontainer > .partners__single-box.partners__single-box--none {
+    display: block;
   }
 }/*# sourceMappingURL=styles.css.map */
