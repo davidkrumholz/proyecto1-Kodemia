@@ -33,6 +33,7 @@
   background-color: white;
   border: none;
   padding: 10px;
+  display: none;
 }
 
 
@@ -86,6 +87,9 @@
 @media only screen and (min-width: 992px) {
     body {
         background-color: blue;
+    }
+    .header__buttons {
+      display: inline-block;
     }
   }
 
