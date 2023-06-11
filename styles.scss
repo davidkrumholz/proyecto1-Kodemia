@@ -54,12 +54,14 @@
   margin-bottom: 30px;
   font-size: 34px;
   font-family: $font-abril-fatface;
+  letter-spacing: 5px;
 }
 
 /* Landing image pictures */
 
 .container__media {
   display: flex;
+  margin-right: 10px;
 }
 
 .container__media__image_of_piano {
@@ -83,6 +85,13 @@
   margin: 10px;
   border-radius: 100%;
   border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.container__media__icons__images {
+  padding: 6px;
 }
 
 .container__botones {
@@ -90,10 +99,7 @@
   margin-bottom: 35px;
 }
 
-.facebook {
-  height: 100px;
-  width: 100px;
-}
+
 
 .container__botones__black {
   color: white;
