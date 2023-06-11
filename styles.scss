@@ -75,6 +75,7 @@
   flex-direction: column;
   align-self: flex-end;
   margin-bottom: 70px;
+  display: none;
   
 }
 
@@ -131,5 +132,9 @@
   }
   .header__buttons {
     display: inline-block;
+  }
+
+  .container__media__icons {
+    display: block;
   }
 }

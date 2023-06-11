@@ -71,6 +71,7 @@
   flex-direction: column;
   align-self: flex-end;
   margin-bottom: 70px;
+  display: none;
 }
 
 .icons {
@@ -124,5 +125,8 @@
   }
   .header__buttons {
     display: inline-block;
+  }
+  .container__media__icons {
+    display: block;
   }
 }/*# sourceMappingURL=styles.css.map */
