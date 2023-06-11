@@ -85,6 +85,9 @@
           vertical-align: middle;
           margin-left: 20px;
           border-radius: 8px;
+          &:hover {
+            background-color: $black-hover;
+          }
         }
       }
     }
@@ -92,15 +95,18 @@
   .button__container {
     display: flex;
     align-items: center;
-    >.type__button--small {
-        background-color: $black;
-        color: $white;
-        padding: 5px;
-        width: 100px;
-        border-radius: 8px;
-        border: none;
-        margin: 0 auto;
+    > .type__button--small {
+      background-color: $black;
+      color: $white;
+      padding: 5px;
+      width: 120px;
+      border-radius: 8px;
+      border: none;
+      margin: 0 auto;
+      &:hover {
+        background-color: $black-hover;
       }
+    }
   }
 }
 
@@ -108,21 +114,21 @@
   body {
   }
   .type__container {
-    >.pianos__container {
-        flex-direction: row;
-        margin-top: 85px;
-        justify-content: center;
-        >.pianos__box {
-            height: 220px;
-            > img{
-                position: relative;
-                top: -95px;
-            }
-            .pianos__info-container {
-                position: relative;
-                top: -82px;
-            }
+    > .pianos__container {
+      flex-direction: row;
+      margin-top: 85px;
+      justify-content: center;
+      > .pianos__box {
+        height: 220px;
+        > img {
+          position: relative;
+          top: -95px;
         }
+        .pianos__info-container {
+          position: relative;
+          top: -82px;
+        }
+      }
     }
   }
 }

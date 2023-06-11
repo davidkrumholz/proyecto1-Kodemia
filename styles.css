@@ -84,6 +84,9 @@
   margin-left: 20px;
   border-radius: 8px;
 }
+.type__container .pianos__container > .pianos__box .pianos__info-container .pianos__buttons-container > .button__cart:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
 .type__container .button__container {
   display: flex;
   align-items: center;
@@ -92,10 +95,13 @@
   background-color: black;
   color: white;
   padding: 5px;
-  width: 100px;
+  width: 120px;
   border-radius: 8px;
   border: none;
   margin: 0 auto;
+}
+.type__container .button__container > .type__button--small:hover {
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 @media only screen and (min-width: 992px) {
