@@ -49,9 +49,9 @@
 .container__h1 {
   text-align: center;
   margin-bottom: 30px;
-  font-size: 34px;
+  font-size: 30px;
   font-family: "Abril Fatface", cursive;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 /* Landing image pictures */
@@ -61,7 +61,7 @@
 }
 
 .container__media__image_of_piano {
-  width: 60%;
+  width: 100%;
   margin: auto;
   padding: 0px;
 }
@@ -117,6 +117,42 @@
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   border: solid 1px black;
+}
+
+/* botones */
+.container____mainbutones {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0px;
+  align-content: center;
+  margin-bottom: 10px;
+}
+.container____mainbutones .mainbutones__negro {
+  background-color: black;
+  color: white;
+  margin: 5px;
+  width: 110px;
+  height: 20px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  border: black 1px solid;
+  padding: 4px 2px;
+  font-weight: 100;
+}
+.container____mainbutones .mainbutones__transparente {
+  margin: 5px;
+  width: 110px;
+  height: 20px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  border: black 1px solid;
+  padding: 4px 2px;
+  font-weight: 100;
 }
 
 @media only screen and (min-width: 992px) {
