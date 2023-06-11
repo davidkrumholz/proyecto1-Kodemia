@@ -70,7 +70,7 @@
   display: flex;
   flex-direction: column;
   align-self: flex-end;
-  margin-bottom: 70px;
+  margin-bottom: 88px;
   display: none;
 }
 
@@ -78,7 +78,7 @@
   width: 25px;
   height: 25px;
   background-color: white;
-  margin: 10px;
+  margin: 20px;
   border-radius: 100%;
   border: solid 1px black;
   display: flex;
@@ -88,35 +88,6 @@
 
 .container__media__icons__images {
   padding: 6px;
-}
-
-.container__botones {
-  text-align: center;
-  margin-bottom: 35px;
-}
-
-.container__botones__black {
-  color: white;
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background-color: black;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-}
-
-.container__botones__transparente {
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background-color: white;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  border: solid 1px black;
 }
 
 /* botones */
@@ -132,27 +103,29 @@
   background-color: black;
   color: white;
   margin: 5px;
-  width: 110px;
+  width: 120px;
   height: 20px;
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   border: black 1px solid;
   padding: 4px 2px;
-  font-weight: 100;
+  font-weight: 400;
+  padding-bottom: 6px;
 }
 .container____mainbutones .mainbutones__transparente {
   margin: 5px;
-  width: 110px;
+  width: 120px;
   height: 20px;
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   border: black 1px solid;
   padding: 4px 2px;
-  font-weight: 100;
+  font-weight: 400;
+  padding-bottom: 6px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -164,5 +137,12 @@
   }
   .container__media__icons {
     display: block;
+  }
+  .container__h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
+  }
+  .container__media__image_of_piano {
+    width: 80%;
   }
 }/*# sourceMappingURL=styles.css.map */

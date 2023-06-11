@@ -2,15 +2,16 @@
 @import "vars";
 
 @mixin bottones {
-  width: 110px;
+  width: 120px;
   height: 20px;
   border-radius: 8px;
   font-family: $font-poppins;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   border: black 1px solid;
   padding: 4px 2px;
-  font-weight: 100;
+  font-weight: 400;
+  padding-bottom: 6px;
 }
 
 * {
@@ -86,7 +87,7 @@
   display: flex;
   flex-direction: column;
   align-self: flex-end;
-  margin-bottom: 70px;
+  margin-bottom: 88px;
   display: none;
   
 }
@@ -95,7 +96,7 @@
   width: 25px;
   height: 25px;
   background-color: white;
-  margin: 10px;
+  margin: 20px;
   border-radius: 100%;
   border: solid 1px black;
   display: flex;
@@ -107,36 +108,6 @@
   padding: 6px;
 }
 
-.container__botones {
-  text-align: center;
-  margin-bottom: 35px;
-}
-
-
-
-.container__botones__black {
-  color: white;
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background-color: black;
-  font-family: $font-poppins;
-  font-size: 14px;
-}
-
-.container__botones__transparente {
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background-color: white;
-  font-family: $font-poppins;
-  font-size: 14px;
-  border: solid 1px black;
-}
 
 
 
@@ -186,5 +157,14 @@
 
   .container__media__icons {
     display: block;
+  }
+
+  .container__h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
+  }
+
+  .container__media__image_of_piano {
+    width: 80%;
   }
 }
