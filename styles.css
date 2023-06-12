@@ -4,21 +4,21 @@
   margin: 0;
 }
 
-.container__grupo2280 {
+.main__container {
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
 }
 
-.conoce__title {
+.main__title {
   font-family: "abril fatface", Arial, sans-serif;
   font-weight: 400;
   font-size: 24px;
   text-align: center;
-  background-image: url("./assets/images/Group 2238.png");
+  background-image: url("./assets/images/pianista.png");
   background-position: cover;
   background-repeat: no-repeat;
 }
 
-.container__grupo2240 {
+.fotografia__piano {
   margin: auto;
   width: 288px;
   height: 263.31px;
@@ -56,7 +56,7 @@
   font-size: 24px;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
 }
 
 .texto__lorem {
@@ -105,7 +105,13 @@
 }
 
 @media only screen and (min-width: 992px) {
-  body {
-    background-color: blue;
+  /* Meter reglas de Desktop*/
+  .main__container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .container__informacion {
+    width: 360px;
+    margin: 32px;
   }
 }/*# sourceMappingURL=styles.css.map */
