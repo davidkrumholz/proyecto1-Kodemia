@@ -14,25 +14,75 @@
 .header__iconimage {
   width: 88px;
   height: 44px;
-  padding-top: 20px;
+  padding-top: 40px;
   margin-left: 10px;
   margin-top: 5px;
 }
 
 .header__checkoutImage {
-  display: inline-block;
   width: 120px;
   height: 130px;
-  padding: 1px;
+  margin-top: 15px;
 }
 
-.header__buttons {
-  bottom: 73px;
-  position: relative;
-  border-radius: 10px;
-  background-color: white;
+.header__rightbutones__transparente {
+  width: 120px;
+  height: 20px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: center;
   border: none;
-  padding: 10px;
+  padding: 4px 2px;
+  font-weight: 400;
+  padding-bottom: 6px;
+  margin-top: 35px;
+  width: 70px;
+}
+
+.header__rightbutones {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-content: flex-end;
+  padding: 20px;
+}
+.header__rightbutones .header__rightbutones__black {
+  width: 120px;
+  height: 20px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  border: none;
+  padding: 4px 2px;
+  font-weight: 400;
+  padding-bottom: 6px;
+  background-color: black;
+  color: white;
+  margin-top: 35px;
+}
+.header__rightbutones .header__rightbutones__student {
+  width: 120px;
+  height: 20px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  border: none;
+  padding: 4px 2px;
+  font-weight: 400;
+  padding-bottom: 6px;
+  color: black;
+  margin-top: 35px;
+  margin-right: 5px;
+}
+
+.header__rightmenu {
+  display: flex;
+}
+
+.header__rightbutones {
   display: none;
 }
 
@@ -107,7 +157,7 @@
   height: 20px;
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   border: black 1px solid;
   padding: 4px 2px;
@@ -120,7 +170,7 @@
   height: 20px;
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   border: black 1px solid;
   padding: 4px 2px;
@@ -144,5 +194,8 @@
   }
   .container__media__image_of_piano {
     width: 80%;
+  }
+  .header__rightbutones {
+    display: flex;
   }
 }/*# sourceMappingURL=styles.css.map */

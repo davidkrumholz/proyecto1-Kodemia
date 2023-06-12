@@ -6,9 +6,22 @@
   height: 20px;
   border-radius: 8px;
   font-family: $font-poppins;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   border: black 1px solid;
+  padding: 4px 2px;
+  font-weight: 400;
+  padding-bottom: 6px;
+}
+
+@mixin bottoneshead {
+  width: 120px;
+  height: 20px;
+  border-radius: 8px;
+  font-family: $font-poppins;
+  font-size: 14px;
+  text-align: center;
+  border: none;
   padding: 4px 2px;
   font-weight: 400;
   padding-bottom: 6px;
@@ -29,25 +42,51 @@
 .header__iconimage {
   width: 88px;
   height: 44px;
-  padding-top: 20px;
+  padding-top: 40px;
   margin-left: 10px;
   margin-top: 5px;
 }
 
 .header__checkoutImage {
-  display: inline-block;
   width: 120px;
   height: 130px;
-  padding: 1px;
+  margin-top: 15px
 }
 
-.header__buttons {
-  bottom: 73px;
-  position: relative;
-  border-radius: 10px;
-  background-color: white;
-  border: none;
-  padding: 10px;
+.header__rightbutones__transparente {
+  @include bottoneshead;
+  margin-top: 35px;
+  width: 70px;
+}
+
+.header__rightbutones {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-content: flex-end;
+  padding: 20px;
+
+ .header__rightbutones__black  {
+    @include bottoneshead;
+    background-color: black;
+    color: white;
+    margin-top: 35px;
+  }
+
+  .header__rightbutones__student {
+    @include bottoneshead;
+    color: black;
+    margin-top: 35px;
+    margin-right: 5px;
+  }
+}
+
+.header__rightmenu {
+  display: flex;
+  
+}
+
+.header__rightbutones {
   display: none;
 }
 
@@ -89,7 +128,6 @@
   align-self: flex-end;
   margin-bottom: 88px;
   display: none;
-  
 }
 
 .icons {
@@ -108,9 +146,6 @@
   padding: 6px;
 }
 
-
-
-
 /* botones */
 
 .container____mainbutones {
@@ -126,7 +161,6 @@
     color: white;
     margin: 5px;
     @include bottones;
-    
   }
 
   .mainbutones__transparente {
@@ -134,18 +168,6 @@
     @include bottones;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media only screen and (min-width: 992px) {
   body {
@@ -167,4 +189,9 @@
   .container__media__image_of_piano {
     width: 80%;
   }
+
+  .header__rightbutones {
+    display: flex;
+  }
+
 }
