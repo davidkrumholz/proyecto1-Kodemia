@@ -27,9 +27,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(./assets/images/pianista2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
   
   }
 
+  .fotografia__piano > .piano__img {
+    opacity: 1;
+  }
   
   .nuevo__ebony {
     color: white;
@@ -123,6 +130,7 @@
 
 .main__title > h3 {
   display: inline;
+  width: 470px;
 }
 
 
@@ -134,6 +142,10 @@
     background-repeat: no-repeat;
     width: 100%;
     padding: 80px 0;
+   }
+
+   .block__one.fotografia__piano {
+    background-image: none;
    }
 
    .block__one.fotografia__piano > .piano__img {
