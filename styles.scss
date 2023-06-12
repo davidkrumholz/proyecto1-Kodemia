@@ -2,7 +2,79 @@
 
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.contact__container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.35) 100%
+  );
+
+  .title__container {
+    display: flex;
+    flex-direction: column;
+
+    > .title__contact {
+      font-family: $font-abril-fatface;
+      font-weight: 400;
+      font-size: 24px;
+      letter-spacing: 0.8px;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    > .text__contact {
+      font-family: $font-raleway;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 0.8px;
+      padding-top: 20px;
+      margin-left: 15px;
+      margin-right: 15px;
+      text-align: center;
+    }
+  }
+
+  .form__container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    .form__contact {
+      .form__label {
+        font-family: $font-raleway;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        width: 100%;
+        height: 40px;
+        padding-top: 10px;
+      }
+
+      .input-form__container {
+        > input {
+          background-color: $black-hover;
+          width: 100%;
+          height: 40px;
+          border: #ffffff solid 1px;
+          border-radius: 4px;
+          color: white;
+        }
+      }
+      > textarea {
+        background-color: $black-hover;
+        width: 100%;
+        border: #ffffff solid 1px;
+        border-radius: 4px;
+        color: white;
+      }
 
 .layout__section {
     width: 100%;
