@@ -3,6 +3,181 @@
   margin: 0;
 }
 
+/* Top menu bar */
+.nav__bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__iconimage {
+  width: 88px;
+  height: 44px;
+  padding-top: 40px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.header__checkoutImage {
+  width: 120px;
+  height: 130px;
+  margin-top: 15px;
+}
+
+.header__rightbutones__transparente {
+  width: 120px;
+  height: 20px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  border: none;
+  padding: 4px 2px;
+  font-weight: 400;
+  padding-bottom: 6px;
+  margin-top: 35px;
+  width: 70px;
+}
+
+.header__rightbutones {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-content: flex-end;
+  padding: 20px;
+}
+.header__rightbutones .header__rightbutones__black {
+  width: 120px;
+  height: 20px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  border: none;
+  padding: 4px 2px;
+  font-weight: 400;
+  padding-bottom: 6px;
+  background-color: black;
+  color: white;
+  margin-top: 35px;
+}
+.header__rightbutones .header__rightbutones__student {
+  width: 120px;
+  height: 20px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  border: none;
+  padding: 4px 2px;
+  font-weight: 400;
+  padding-bottom: 6px;
+  color: black;
+  margin-top: 35px;
+  margin-right: 5px;
+}
+
+.header__rightmenu {
+  display: flex;
+}
+
+.header__rightbutones {
+  display: none;
+}
+
+/* Landing page  main info */
+.container__p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: rgb(133, 133, 133);
+}
+
+.container__h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 2px;
+}
+
+/* Landing image pictures */
+.container__media {
+  display: flex;
+  margin-right: 10px;
+}
+
+.container__media__image_of_piano {
+  width: 100%;
+  margin: auto;
+  padding: 0px;
+}
+
+.container__media__icons {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-bottom: 88px;
+  display: none;
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 100%;
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 5px;
+}
+
+.container__media__icons__images {
+  padding: 6px;
+}
+
+/* botones */
+.container____mainbutones {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0px;
+  align-content: center;
+  margin-bottom: 10px;
+}
+.container____mainbutones .mainbutones__negro {
+  background-color: black;
+  color: white;
+  margin: 5px;
+  width: 120px;
+  height: 20px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  border: black 1px solid;
+  padding: 4px 2px;
+  font-weight: 400;
+  padding-bottom: 6px;
+}
+.container____mainbutones .mainbutones__transparente {
+  margin: 5px;
+  width: 120px;
+  height: 20px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  border: black 1px solid;
+  padding: 4px 2px;
+  font-weight: 400;
+  padding-bottom: 6px;
+}
+
 .contact__container {
   width: 100%;
   height: 100%;
@@ -332,5 +507,22 @@
   .form__container > .form__contact .form-input__container--inline .email-input__container {
     width: 50%;
     padding-left: 10px;
+  }
+  .header__buttons {
+    display: inline-block;
+  }
+  .container__media__icons {
+    display: block;
+  }
+  .container__h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
+  }
+  .container__media__image_of_piano {
+    width: 80%;
+    max-width: 60%;
+  }
+  .header__rightbutones {
+    display: flex;
   }
 }/*# sourceMappingURL=styles.css.map */
