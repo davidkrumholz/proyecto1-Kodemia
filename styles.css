@@ -3,34 +3,116 @@
   margin: 0;
 }
 
-.layout__section {
+.contact__container {
   width: 100%;
-  background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%);
+  height: 100%;
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.35) 100%);
+}
+.contact__container .title__container {
+  display: flex;
+  flex-direction: column;
+}
+.contact__container .title__container > .title__contact {
+  font-family: "Abril Fatface", cursive;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.8px;
+  padding-top: 20px;
+  text-align: center;
+}
+.contact__container .title__container > .text__contact {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  padding-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+}
+.contact__container .form__container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.contact__container .form__container .form__contact .form__label {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  width: 100%;
+  height: 40px;
+  padding-top: 10px;
+}
+.contact__container .form__container .form__contact .input-form__container > input {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 40px;
+  border: #ffffff solid 1px;
+  border-radius: 4px;
+  color: white;
+}
+.contact__container .form__container .form__contact > textarea {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  border: #ffffff solid 1px;
+  border-radius: 4px;
+  color: white;
+}
+.contact__container .form__container .form__contact .form__button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+}
+.contact__container .bgImage__contact {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -40;
+}
+.contact__container .bgImage__contact > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -40;
 }
 
-.card {
+.layout__section {
+  width: 100%;
+  background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6f6f6f 107.44%);
+}
+.layout__section > .card {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
-.logos__container {
+.layout__section > .card .logos__container {
   width: 138.67px;
   height: 195px;
   margin-bottom: 56px;
 }
-.logos__container .media__icons {
+.layout__section > .card .logos__container .media__icons {
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
 }
-.logos__container .media__icons .vector {
+.layout__section > .card .logos__container .media__icons .vector {
   position: absolute;
   margin: 6px 10px;
 }
-
-.us__container {
+.layout__section > .card .us__container {
   width: 254px;
   margin-bottom: 24px;
   font-family: "Poppins", sans-serif;
@@ -39,15 +121,13 @@
   font-style: normal;
   font-weight: 300;
 }
-
-.title {
+.layout__section > .card .title {
   font-family: "Abril Fatface", cursive;
   font-size: 14px;
   line-height: 18px;
   padding-bottom: 12px;
 }
-
-.contact__container {
+.layout__section > .card .footer__contact-container {
   width: 240px;
   margin-bottom: 81px;
   font-family: "Poppins", sans-serif;
@@ -56,33 +136,29 @@
   font-style: normal;
   font-weight: 300;
 }
-
-.location {
+.layout__section > .card .location {
   font-size: 14px;
   line-height: 21px;
 }
-
-.brand__container {
+.layout__section .brand__container {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-
-.brand {
+.layout__section > .brand {
   font-family: "Raleway", sans-serif;
-  width: 400px;
+  width: 100%;
   font-size: 12px;
   font-weight: 300;
   align-items: center;
   padding-bottom: 32px;
 }
-.brand .rights {
+.layout__section > .brand .rights {
   font-size: 14px;
 }
-
-.footer__container {
+.layout__section .footer__container {
   margin: 15px;
   text-align: center;
   display: flex;
@@ -91,21 +167,19 @@
   flex-direction: column;
   align-items: center;
 }
-
-.footer {
+.layout__section > .footer {
   width: 140px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
-.footer .heart {
+.layout__section > .footer .heart {
   position: absolute;
   color: rgb(196, 0, 0);
   font-size: 13px;
   padding-left: 3.3px;
   padding-top: 1.9px;
 }
-
-.type__footer {
+.layout__section > .footer .type__footer {
   margin: 0px;
   text-align: center;
   display: flex;
@@ -231,5 +305,32 @@
   .type__container > .pianos__container > .pianos__box .pianos__info-container {
     position: relative;
     top: -82px;
+  }
+  .title__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title__container > .title__contact {
+    width: 50%;
+  }
+  .title__container > .text__contact {
+    width: 50%;
+  }
+  .form__container > .form__contact {
+    width: 50%;
+  }
+  .form__container > .form__contact .form-input__container--inline {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .form__container > .form__contact .form-input__container--inline .tel-input__container {
+    width: 50%;
+    padding-right: 10px;
+  }
+  .form__container > .form__contact .form-input__container--inline .email-input__container {
+    width: 50%;
+    padding-left: 10px;
   }
 }/*# sourceMappingURL=styles.css.map */
