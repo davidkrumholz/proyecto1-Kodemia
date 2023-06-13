@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;500&family=Raleway:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
@@ -464,7 +465,165 @@
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+.main__container {
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+}
+
+.main__title {
+  font-family: "abril fatface", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  background-image: url("./assets/images/pianista.png");
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+.fotografia__piano {
+  margin: auto;
+  width: 100%;
+  height: 263.31px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/images/pianista2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fotografia__piano > .piano__img {
+  opacity: 1;
+}
+
+.nuevo__ebony {
+  color: white;
+  font-family: "abril fatface", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container__group2282 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.desde {
+  color: white;
+  font-family: "abril fatface", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 1px;
+}
+
+.texto__lorem {
+  color: white;
+  font-family: raleway;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container__group2281 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.lista__caracteristicas {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.non_bullet {
+  list-style: none;
+}
+
+.container__grupo2218 {
+  background-color: black;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  padding: 5px;
+  width: 228px; /* Ajusta el valor según el ancho deseado */
+  border-radius: 8px;
+}
+
 @media only screen and (min-width: 992px) {
+  .main__title {
+    text-align: center;
+    width: 100%;
+  }
+  .main__title > h3 {
+    display: inline;
+    width: 470px;
+  }
+  .main__container {
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url("./assets/images/pianista.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 180px 0;
+  }
+  .block__one.fotografia__piano {
+    background-image: none;
+  }
+  .block__one.fotografia__piano > .piano__img {
+    width: 508px;
+  }
+  .container__informacion {
+    width: 700px;
+    margin: 32px;
+  }
+  .container__informacion > .nuevo__ebony {
+    text-align: left;
+  }
+  .container__group2282 {
+    justify-content: left;
+  }
+  .desde {
+    text-align: left;
+  }
+  .texto__lorem {
+    text-align: left;
+    padding: 0px;
+    margin: 15px 0;
+  }
+  .lista__caracteristicas {
+    justify-content: left;
+    padding-left: 0;
+  }
+  .container__grupo2218 {
+    float: left;
+  }
   .type__container > .pianos__container {
     flex-direction: row;
     margin-top: 85px;
