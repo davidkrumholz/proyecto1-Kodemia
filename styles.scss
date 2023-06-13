@@ -594,7 +594,70 @@
     border-radius: 8px;
   }
 
- 
+.partners__container {
+  background: linear-gradient(177.96deg, #6F6F6F 1.72%, #FFFFFF 98.63%);
+  padding-bottom: 110px;
+  padding-top: 80px;
+  > .partners__main-title {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: $font-abril-fatface;
+    text-align: center;
+  }
+  > .partners__main-container {
+    margin-top: 20px;
+    > .partners__linecontainer {
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+      align-items: center;
+      > .partners__single-box {
+        width: 260px;
+        height: 60px;
+        background-color: black;
+        margin: 5px;
+        padding: 12px 5px;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        .partners__title {
+          color: $white;
+          font-family: $font-raleway;
+          font-size: 30px;
+          font-weight: 400;
+          font-variant: small-caps;
+          margin-left: 30px;
+        }
+        > .partners__icon-box {
+          background-color: gray;
+          width: 70px;
+          height: 70px;
+          border-radius: 100%;
+          border: 2px solid white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      > .partners__single-box.partners__single-box--none {
+        display: none;
+      }
+      >.partners__single-box.partners__single-box--rounded-right {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      >.partners__single-box.partners__single-box--rounded-left {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      >.partners__single-box.partners__single-box--invert-row {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 992px) {
   body {
   }
@@ -726,10 +789,42 @@
 
   .container__media__image_of_piano {
     width: 80%;
-    max-width: 60%;
+    max-width: 50%;
   }
 
   .header__rightbutones {
     display: flex;
   }
+
+  .partners__container {
+    > .partners__main-container {
+      > .partners__linecontainer {
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
+        justify-content: center;
+        > .partners__single-box {
+          width: 280px;
+          background-color: black;
+          margin: 5px;
+        }
+        > .partners__single-box.partners__single-box--none {
+          display: flex;
+        }
+        >.partners__single-box.partners__single-box--rounded-right:first-child {
+          border-top-right-radius: 50px;
+          border-bottom-right-radius: 50px;
+        }
+        >.partners__single-box.partners__single-box--rounded-right:last-child {
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+        >.partners__single-box.partners__single-box--rounded-left{
+          border-top-left-radius: 50px;
+          border-bottom-left-radius: 50px;
+        }
+      }
+    }
+  }
 }
+
